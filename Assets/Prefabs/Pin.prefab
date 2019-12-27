@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 2460079299195872193}
   - component: {fileID: 2460079299195872194}
   - component: {fileID: 2460079299195872223}
+  - component: {fileID: 5261940151437320697}
   m_Layer: 0
   m_Name: Pin
-  m_TagString: Untagged
+  m_TagString: Pin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,6 +120,23 @@ MonoBehaviour:
   speed: 20
   rb: {fileID: 2460079299195872194}
   shoot: 1
+  scoreText: {fileID: 0}
+--- !u!58 &5261940151437320697
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2460079299195872195}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.8533333
 --- !u!1 &2460079299516286018
 GameObject:
   m_ObjectHideFlags: 0

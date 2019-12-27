@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PinBehaviour : MonoBehaviour
 {
     public int speed;
     public Rigidbody2D rb;
     public bool shoot;
+    public Text scoreText;
 
     // Update is called once per frame
     void Update()
@@ -20,6 +22,11 @@ public class PinBehaviour : MonoBehaviour
         {
             shoot = false;
             transform.parent = other.transform;
+            scoreText.text = ++PinSpawner.score+"";
+        }
+        else
+        {
+            StartCoroutine(Camera.main.GetComponent<CameraBehaviour>().gameOver());
         }
     }
 }
