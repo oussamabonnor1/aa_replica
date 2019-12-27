@@ -6,7 +6,7 @@
 A "AA" game replica, 2D fun mobile game about shooting arrows.
 
 ## Screenshot:
-<img src="Screenshot/CutGif.gif" width ="500"/>
+<img src="Screenshots/AAGif.gif" />
 
 ## Game logic:
 Shoot arrows into the orb without them hitting eachother.
