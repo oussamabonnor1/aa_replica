@@ -8,14 +8,17 @@ public class PinSpawner : MonoBehaviour
     public GameObject pin;
     public Text scoreText;
     public static int score;
+
+    public static bool canPin = true;
     
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        if (canPin && (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)))
         {
             GameObject temp =  Instantiate(pin, transform.position, transform.rotation);
             temp.GetComponent<PinBehaviour>().scoreText = scoreText;
+            
         }
     }
 }
