@@ -23,9 +23,10 @@ public class PinBehaviour : MonoBehaviour
             shoot = false;
             transform.parent = other.transform;
             scoreText.text = ++PinSpawner.score+"";
+            Camera.main.GetComponent<CameraBehaviour>().jiggle();
         }
         else
-        {
+        {   
             StartCoroutine(Camera.main.GetComponent<CameraBehaviour>().gameOver());
         }
     }
